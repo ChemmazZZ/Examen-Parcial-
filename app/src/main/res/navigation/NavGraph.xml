@@ -4,3 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/WelcomeFragment">
 
+    <fragment
+        android:id="@+id/WelcomeFragment"
+        android:name="com.chemma.examenaparcial.ui.welcome.WelcomeFragment"
+        android:label="Bienvenida"
+        tools:layout="@layout/FragmentWelcome">
+        <action
+            android:id="@+id/action_WelcomeFragment_to_GameFragment"
+            app:destination="@id/GameFragment" />
+    </fragment>
+
+    <!-- Fragmento del Juego -->
+    <fragment
+        android:id="@+id/GameFragment"
+        android:name="com.chemma.examenparcial.ui.game.GameFragment"
+        android:label="Juego"
+        tools:layout="@layout/FragmentGame">
+        <action
+            android:id="@+id/action_GameFragment_to_ResultFragment"
+            app:destination="@id/ResultFragment" />
+    </fragment>
+
+    <!-- Fragmento de Resultados -->
+    <fragment
+        android:id="@+id/ResultFragment"
+        android:name="com.chemma.examenparcial.ui.result.ResultFragment"
+        android:label="Resultados"
+        tools:layout="@layout/FragmentResult">
+        <action
+            android:id="@+id/action_ResultFragment_to_GameFragment"
+            app:destination="@id/GameFragment" />
+    </fragment>
+
+</navigation>
