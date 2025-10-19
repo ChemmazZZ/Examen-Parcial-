@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">EXAMEM PARCIAL</string>
-    <string name="score_text">Puntaje: 0</string>
-    <string name="time_text">Tiempo: 30s</string>
+    <string name="score_text">Puntaje: %d</string>
+    <string name="time_text">Tiempo: %ds</string>
     <string name="your_score">Your Score: %d</string>
+    <string name="play_again_dialog_title">Play Again?</string>
+    <string name="play_again_dialog_message">Are you sure you want to start a new game?</string>
+    <string name="play_again_dialog_positive">Yes</string>
+    <string name="play_again_dialog_negative">No</string>
 </resources>
