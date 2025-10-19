@@ -6,9 +6,9 @@
 
     <fragment
         android:id="@+id/WelcomeFragment"
-        android:name="com.chemma.examenaparcial.ui.welcome.WelcomeFragment"
+        android:name="com.chemma.examenaparcial.ui.welcome.welcomefragment"
         android:label="Bienvenida"
-        tools:layout="@layout/FragmentWelcome">
+        tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_WelcomeFragment_to_GameFragment"
             app:destination="@id/GameFragment" />
