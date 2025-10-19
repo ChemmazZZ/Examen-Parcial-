@@ -29,7 +29,7 @@
     <!-- Fragmento de Resultados -->
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.chemma.examemparcial.ui.result.ResultFragment"
+        android:name="com.chemma.examemparcial.ui.game.ResultFragment"
         android:label="Resultados"
         tools:layout="@layout/fragment_result">
         <argument
