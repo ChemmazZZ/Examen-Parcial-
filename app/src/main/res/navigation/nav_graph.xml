@@ -32,9 +32,15 @@
         android:name="com.chemma.examemparcial.ui.result.ResultFragment"
         android:label="Resultados"
         tools:layout="@layout/fragment_result">
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0" />
         <action
-            android:id="@+id/action_resultFragment_to_gameFragment"
-            app:destination="@id/gameFragment" />
+            android:id="@+id/action_resultFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
 </navigation>
