@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/welcomeFragment">
+
+    <!-- Fragmento de Bienvenida -->
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.chemma.examemparcial.ui.welcome.WelcomeFragment"
+        android:label="Bienvenida"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+
+    <!-- Fragmento del Juego -->
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.chemma.examemparcial.ui.game.GameFragment"
+        android:label="Juego"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+    <!-- Fragmento de Resultados -->
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.chemma.examemparcial.ui.result.ResultFragment"
+        android:label="Resultados"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_resultFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+
+</navigation>
